@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { program } from 'commander';
-import { prompt } from 'inquirer';
+import { prompt, Separator } from 'inquirer';
 import open from 'open';
 import packageJSON from './package.json';
 
@@ -42,17 +42,17 @@ program
 		await epicLog(`🕵️ ${greeting} Agent 🕵️`, 1200);
 		console.log('');
 
-		await epicLog('In the wake of the current events, our organization received new ℹ intel indicating that a highly trained person is planning to take over 🌐 the internet.', 400);
+		await epicLog('In the wake of the current events, our organization received new 🔍 intel indicating that a highly trained person is planning to take over 🌐 the internet.', 400);
 		await epicLog('The person of interest goes by the nickname mohaka, He is a 💀 dangerous 👀 undercover agent pretending to be a 👨‍💻 software engineer.', 400);
 		await epicLog('His real name however is Heysem and he\'s building a 🚀 sophisticated algorithm that can take control of 💻 any computer all over 🌍 the world.', 2800);
 		console.log('');
 
-		await epicLog('Your mission should you choose to accept it is to infiltrate the highly secured GitHub\'s main server, retrieve a copy of the algorithm\'s source, and destroy that repository once and for all.', 400);
-		await epicLog('Be carefully agent ⚠️, this is not an ordinary mission, your target is know for his keen skills with 🖥️ computers, 📱 phones, and any device with a ⚙️ CPU.', 400);
-		await epicLog('As always, should you or any member of your team be 🚔 caught or 🔫 killed, our organization will disavow any knowledge of your actions.', 2800);
+		await epicLog('Your mission should you choose to accept it is to infiltrate the highly secured  main server in GitHub\'s headquarter, retrieve a copy of the algorithm\'s source code, and destroy that repository once and for all.', 400);
+		await epicLog('Be careful agent ⚠️, this is not an ordinary mission, your target is know for his keen skills with 🖥️ computers, 📱 phones, and any device with a 🤖 CPU.', 400);
+		await epicLog('As always, should you or any member of your team be 🚔 caught or 🔫 killed, our organization will 🫥 disavow any knowledge of your actions.', 2800);
 		console.log('');
 
-		await epicLog('Good Luck 🍀', 800);
+		await epicLog('🍀 Good Luck Agent 🍀', 800);
 		await epicLog('This message will self-destruct in 🧨 🧨 🧨 🧨 🧨', 0, false);
 
 		await sleep(1000);
@@ -84,21 +84,21 @@ program
 		console.log('');
 		console.log('My name is Heysem 👋');
 		console.log('I make 📱 mobile apps for 🤖 Android and 🍎 iOS (sometimes just for fun), I\'m pretty good at designing my own 🎨 UI/UX and then converting my designs to real projects.');
-		console.log('When I\'m not writing code or solving some kind of puzzle, I\'m probably playing ♟️ chess on Lichess so please join me there for a blitz game.');
+		console.log('When I\'m not writing code or solving some kind of puzzle, I\'m probably playing ♞ chess on Lichess so please join me there for a blitz game.');
 		console.log('');
 
-		const email = '✉️ Email';
+		const email = '📧 Email';
 		const github = '😺 GitHub';
 		const stackoverflow = '💬 StackOverflow';
 		const linkedin = '🔗 LinkedIn';
 		const twitter = '🐦 Twitter';
-		const lichess = '♟️ Lichess';
+		const lichess = '♞ Lichess';
 
 		const { choice } = await prompt({
 			type: 'list',
 			name: 'choice',
 			message: 'Where to find me',
-			choices: [email, github, stackoverflow, linkedin, twitter, lichess],
+			choices: [email, github, stackoverflow, linkedin, new Separator(), twitter, lichess],
 		});
 
 		switch (choice) {
