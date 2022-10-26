@@ -71,6 +71,11 @@ program
 		process.stdout.write('This message will self-destruct in 🧨 🧨');
 
 		await sleep(1000);
+		process.stdout.clearLine(-1);
+		process.stdout.cursorTo(0);
+		process.stdout.write('This message will self-destruct in 🧨');
+
+		await sleep(1000);
 
 		console.log('\n\n');
 		console.log('Ahh, Just kidding 🤪, Nice to meet ya 🤗');
