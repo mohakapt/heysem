@@ -1,6 +1,6 @@
 {
   "name": "heysem",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hi there 👋 My name is Heysem",
   "main": "index.js",
   "scripts": {
