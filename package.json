@@ -1,0 +1,35 @@
+{
+  "name": "heysem",
+  "version": "1.0.0",
+  "description": "Hi there 👋 My name is Heysem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohakapt/heysem"
+  },
+  "author": "Heysem Katibi <mohakapt@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohakapt/heysem/issues"
+  },
+  "homepage": "https://github.com/mohakapt/heysem#readme",
+  "bin": {
+    "heysem": "./index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "@types/inquirer": "^8.2.1",
+    "typescript": "^4.7.2"
+  },
+  "dependencies": {
+    "commander": "^9.2.0",
+    "inquirer": "^8.2.4",
+    "open": "^8.4.0"
+  }
+}
