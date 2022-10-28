@@ -48,7 +48,7 @@ program
 		console.log('');
 
 		await epicLog('Your mission should you choose to accept it is to infiltrate the highly secured  main server in GitHub\'s headquarter, retrieve a copy of the algorithm\'s source code, and destroy that repository once and for all.', 400);
-		await epicLog('Be careful agent ⚠️, this is not an ordinary mission, your target is know for his keen skills with 🖥️ computers, 📱 phones, and any device with a 🤖 CPU.', 400);
+		await epicLog('Be careful agent ⚠️, this is not an ordinary mission, your target is known for his keen skills with 🖥️ computers, 📱 phones, and any device with a 🤖 CPU.', 400);
 		await epicLog('As always, should you or any member of your team be 🚔 caught or 🔫 killed, our organization will 🫥 disavow any knowledge of your actions.', 2800);
 		console.log('');
 
